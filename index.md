@@ -21,4 +21,4 @@ My research interests are Bayesian inferencing and conformal prediction and othe
 Other than my academics, I also am a guitarist and an artist; I really enjoy watercolor painting, sewing and embroidery, and playing with my dog, Lily.
 <br>
 Here's a picture of her:
-![Lily](https://imgur.com/a/KDliOtv)
+![Lily](https://i.imgur.com/GuZZ2DS.jpg)
