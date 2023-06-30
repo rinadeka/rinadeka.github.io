@@ -3,13 +3,13 @@ Coolest Thing I Learned
 Rina Deka
 2023-06-29
 
-## The Most Interesting Thing i’ve Learned
+# The Most Interesting Thing i’ve Learned
 
 By far, one of the most interesting things I’ve learned was how to
 connect to and query an API. Here’s an example below, using an API Key
 “EefyNfm6f32hLdleNqk62NyYiIF5WmoTjCOIUxWl” from the NASA API.
 
-\#API Example: NASA Data
+## API Example: NASA Data
 
 ``` r
 library(tidyverse)
@@ -25,7 +25,7 @@ response
 ```
 
     ## Response [https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=EefyNfm6f32hLdleNqk62NyYiIF5WmoTjCOIUxWl]
-    ##   Date: 2023-06-30 05:07
+    ##   Date: 2023-06-30 05:09
     ##   Status: 200
     ##   Content-Type: application/json; charset=utf-8
     ##   Size: 288 kB

@@ -10,12 +10,12 @@ knitr::opts_chunk$set(fig.path = "../images/")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## The Most Interesting Thing i've Learned 
+# The Most Interesting Thing i've Learned 
 
 By far, one of the most interesting things I've learned was how to connect to and query an API.
 Here's an example below, using an API Key "EefyNfm6f32hLdleNqk62NyYiIF5WmoTjCOIUxWl" from the NASA API.
 
-#API Example: NASA Data
+## API Example: NASA Data
 
 ```{r,warning=FALSE}
 library(tidyverse)
