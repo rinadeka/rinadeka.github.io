@@ -37,5 +37,5 @@ if (http_type(NASA_Call) == "application/json") {
 data$photos[[1]]
 ```
 
-Cool, huh?
+Cool, huh? Check in next time!
 
