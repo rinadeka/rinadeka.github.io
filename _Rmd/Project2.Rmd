@@ -1,7 +1,7 @@
 ---
 title: " Online News Popularity Data Blog Post"
 author: "Rina Deka"
-date: "2023-06-29"
+date: "2023-07-09"
 output: github_document
 ---
 
