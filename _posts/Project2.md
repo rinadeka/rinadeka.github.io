@@ -43,6 +43,7 @@ The biggest take-aways I have from this project are:
   sets it seems. However, I wonder if this could be due to an
   overfitting issue that was overlooked?
 - Make sure you name your chunks!
+- Merge carefully
 
 ### Links:
 

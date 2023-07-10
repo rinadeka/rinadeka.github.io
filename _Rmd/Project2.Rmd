@@ -33,6 +33,7 @@ The most difficult part of the project for me was honestly the automation and me
    - If you can, once you have a solution, you should try to find a way to reduce the run time. Is there an easier way to do the same thing? Etc.
    - While in general, boosted trees might be the most effective models typically, depending on the data it seems that it's not necessarily the case and that different models perform better with different data sets it seems. However, I wonder if this could be due to an overfitting issue that was overlooked?
    - Make sure you name your chunks! 
+   - Merge carefully 
 
 ### Links:
 
