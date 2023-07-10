@@ -17,8 +17,8 @@ automating little by little so that we could debug render time issues.
 
 ### What was the most difficult part for you?
 
-The most difficult part of the project for me was honestly the
-automation and merging, and googling through obsecure github issues.
+I think that the most difficult part of the project for me was honestly
+the automation and merging, and googling through obsecure github issues.
 Helping figure out automation was a little bit difficult since the notes
 given were a little sparse but we eventually figured it out, although
 not necessarily in the most efficient way!

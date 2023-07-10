@@ -20,7 +20,7 @@ I definitely would have had separate branches for each of us separately from the
  
 ### What was the most difficult part for you?
 
-The most difficult part of the project for me was honestly the automation and merging, and googling through obsecure github issues. Helping figure out automation was a little bit difficult since the notes given were a little sparse but we eventually figured it out, although not necessarily in the most efficient way! 
+I think that the most difficult part of the project for me was honestly the automation and merging, and googling through obsecure github issues. Helping figure out automation was a little bit difficult since the notes given were a little sparse but we eventually figured it out, although not necessarily in the most efficient way! 
  
 ### What are your big take-aways from this project?
 
