@@ -1,0 +1,67 @@
+---
+title: "Machine Learning/Statistical Learning"
+author: "Rina Deka"
+date: "2023-06-29"
+output: github_document
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(fig.path = "../images/")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# The Most Interesting Statistical Learning Method I've Learned
+
+By far, I would say that the most interesting statistical learning method that we've covered so far would be decision trees. This method can be used to regression or classification. Bagging (bootstrap aggregation) is a similar method in that we ensemble a bunch of tree models, except with boosting we grow the trees sequentially. Also, each of the trees are grown by using information from previously grown trees!  That means that in this method, the model learns slowly.
+## Boosted Tree Example
+Here's an example of a boosted tree model's implementation. I'll use the iris data set.
+
+```{r}
+library(datasets)
+data(iris)
+summary(iris)
+```
+```{r}
+library(gbm)
+library(rpart)
+library(caret)
+library(tidyverse)
+```
+
+Above are some useful packages. Now, let's try to implement! First, let's split the data into a training and testing set with an 80/20 split.
+
+
+```{r}
+set.seed(123)
+trainIndex <- createDataPartition(y = iris$Species, p= 0.8, list = FALSE)
+training <- iris[trainIndex,]
+testing <- iris[-trainIndex,]
+```
+Let's center and scale the data.
+```{r}
+preprocess <- preProcess(training, method = c("center", "scale"))
+TrainPreprocessed <- predict(preprocess, training)
+TestPreprocessed <- predict(preprocess, testing)
+```
+
+
+```{r}
+control <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
+tuningGrid <- expand.grid(n.trees = c(25, 50, 100, 150, 200),
+                          interaction.depth = 1:4,
+                          shrinkage = 0.1, 
+                          n.minobsinnode = 10)
+
+boosted_tree_model <- train(Species ~ ., data =TrainPreprocessed, method = "gbm",
+               trControl = control, tuneGrid = tuningGrid)
+
+boosted_tree_predictions <- predict(boosted_tree_model, newdata = TestPreprocessed)
+```
+How did it do?
+
+```{r}
+confusionMatrix(TestPreprocessed$Species, boosted_tree_predictions)
+
+```
+
+This model appears to have done pretty well, with a 93% accuracy. 
