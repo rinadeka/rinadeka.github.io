@@ -11,9 +11,10 @@ can be used to regression or classification. Bagging (bootstrap
 aggregation) is a similar method in that we ensemble a bunch of tree
 models, except with boosting we grow the trees sequentially. Also, each
 of the trees are grown by using information from previously grown trees!
-That means that in this method, the model learns slowly. \## Boosted
-Tree Example Here’s an example of a boosted tree model’s implementation.
-I’ll use the iris data set.
+That means that in this method, the model learns slowly.
+
+\##Boosted Tree Example Here’s an example of a boosted tree model’s
+implementation. I’ll use the iris data set.
 
 ``` r
 library(datasets)
