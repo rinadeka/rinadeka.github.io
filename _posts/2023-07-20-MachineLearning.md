@@ -13,8 +13,10 @@ models, except with boosting we grow the trees sequentially. Also, each
 of the trees are grown by using information from previously grown trees!
 That means that in this method, the model learns slowly.
 
-\##Boosted Tree Example Here’s an example of a boosted tree model’s
-implementation. I’ll use the iris data set.
+## Boosted Tree Example
+
+Here’s an example of a boosted tree model’s implementation. I’ll use the
+iris data set.
 
 ``` r
 library(datasets)
